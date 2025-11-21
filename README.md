@@ -1,0 +1,14 @@
+# blazer-user 16 BD3A.251105.010.E1 14337626 release-keys
+- manufacturer: google
+- platform: laguna
+- codename: blazer
+- flavor: blazer-user
+- release: 16
+- id: BD3A.251105.010.E1
+- incremental: 14337626
+- tags: release-keys
+- fingerprint: google/blazer/blazer:16/BD3A.251105.010.E1/14337626:user/release-keys
+- is_ab: true
+- brand: google
+- branch: blazer-user-16-BD3A.251105.010.E1-14337626-release-keys
+- repo: google_blazer_dump
