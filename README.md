@@ -1,0 +1,14 @@
+# generic_system_google-user 17 CP2A.260605.012 15430684 release-keys
+- manufacturer: google
+- platform: laguna
+- codename: blazer
+- flavor: generic_system_google-user
+- release: 17
+- id: CP2A.260605.012
+- incremental: 15430684
+- tags: release-keys
+- fingerprint: google/blazer/blazer:17/CP2A.260605.012/15430684:user/release-keys
+- is_ab: true
+- brand: google
+- branch: generic_system_google-user-17-CP2A.260605.012-15430684-release-keys
+- repo: google_blazer_dump
