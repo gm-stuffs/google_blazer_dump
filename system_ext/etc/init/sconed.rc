@@ -1,0 +1,10 @@
+# Copyright 2025 Google Inc. All Rights Reserved.
+
+service sconed /system_ext/bin/sconed
+    interface aidl google.android.sconed.ISconeNetDaemon
+    user system
+    group net_admin net_raw system
+    capabilities NET_ADMIN NET_RAW
+    disabled
+    oneshot
+    seclabel u:r:sconed:s0

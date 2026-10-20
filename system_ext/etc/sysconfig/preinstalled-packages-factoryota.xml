@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2025 The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<config>
+    <!-- Allowlisting for FactoryOta Client (com.google.android.factoryota) -->
+    <!--
+        User Type: Must be installed for user-type="SYSTEM" (User 0) ONLY.
+
+        Rationale:
+        1.  Purpose: FactoryOta Client updates device software in Factories/GDCs
+            BEFORE devices are shipped and before end-user setup.
+        2.  State: Devices are unboxed and NOT YET PROVISIONED. The Android Setup
+            Wizard has not run.
+        3.  Active Users: At this pre-provisioned stage, only the primary system
+            user (User 0) exists. Other user types (e.g., secondary users,
+            work/private profiles) are created *after* initial setup and are
+            irrelevant to this app's function.
+        4.  Efficiency: Installing only for SYSTEM prevents unnecessary instances
+            on other user types, saving resources.
+
+        See go/preinstall-allowlists and b/450267010.
+    -->
+    <install-in-user-type package="com.google.android.factoryota">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+</config>
+
