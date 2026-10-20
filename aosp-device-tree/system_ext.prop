@@ -1,0 +1,13 @@
+# Audio
+ro.audio.ihaladaptervendorextension_enabled=true
+
+# Miscellaneous
+remote_provisioning.use_cert_processor=false
+ro.camerax.extensions.enabled=true
+ro.config.isolated_compilation_enabled=true
+ro.product.device_for_attestation=blazer
+ro.product.manufacturer_for_attestation=Google
+ro.system_ext.build.uuid=BfWi2ii-9CsbTVt-qD_TpssBR66EO_z-damuUSa0WBY
+ro.system_ext.build.version.sdk_full=37.0
+ro.view.vrr.velocity_threshold=120@0
+
