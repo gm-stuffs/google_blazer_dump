@@ -1,0 +1,5 @@
+kernel: kernel
+dtb: dtb/01_dtbdump_^Q_ictlrQZ.dtb
+header version: 4
+pagesize: 4096
+cmdline: ''
