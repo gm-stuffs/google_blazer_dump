@@ -1,0 +1,6 @@
+<config>
+    <!-- CarrierMetrics (CarrierMetrics) -->
+    <install-in-user-type package="com.google.android.apps.carrier.log">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+</config>

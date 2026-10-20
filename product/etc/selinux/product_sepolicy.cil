@@ -1,0 +1,571 @@
+(typeattributeset domain (adbd aidl_lazy_test_server apexd app_zygote artd atrace audioserver blkid blkid_untrusted bluetooth bootanim bootstat bpfloader bufferhubd cameraserver charger charger_vendor crash_dump credstore crosvm_vendor dhcp dnsmasq drmserver dumpstate e2fs early_virtmgr_vendor ephemeral_app evsmanagerd extra_free_kbytes fastbootd fingerprintd flags_health_check fsck fsck_untrusted gatekeeperd gmscore_app gpuservice healthd heapprofd hwservicemanager idmap incident incident_helper incidentd init init_dev_config inputflinger installd isolated_app isolated_compute_app kernel keystore llkd lmkd logd logpersist mdnsd mediadrmserver mediaextractor mediametrics mediaprovider mediaserver mediaswcodec mediatranscoding mmd_setup modprobe mtp netd netutils_wrapper network_stack nfc omapi perfetto performanced platform_app platform_app_36 postinstall ppp prefetch priv_app priv_app_36 prng_seeder profman radio recovery recovery_persist recovery_refresh rkpdapp rs rss_hwm_reset runas runas_app sdcardd secure_element serialservice servicemanager sgdisk shared_relro shell simpleperf simpleperf_app_runner slideshow statsd su surfaceflinger system_app system_server tee tombstoned toolbox traced traced_perf traced_probes traceur_app ueventd uncrypt untrusted_app untrusted_app_34 untrusted_app_32 untrusted_app_30 untrusted_app_29 untrusted_app_27 untrusted_app_25 update_engine update_verifier usbd vdc vendor_init vendor_misc_writer vendor_modprobe vendor_shell virtual_camera virtual_touchpad virtualizationmanager_vendor vndservicemanager vold vold_prepare_subdirs watchdogd webview_zygote wificond zygote aconfigd aconfigd_mainline adbd_tradeinmode adservices aflags aisealhostservice aisealhostservice_virtualizationmanager aisealhostservice_virtmgr_crosvm aoad apex_test_prepostinstall apexd_derive_classpath art_boot art_exec auditctl automotive_display_service bert_collector blank_screen boringssl_self_test vendor_boringssl_self_test canhalconfigurator casefolding_remover clatd compos_fd_server compos_verify compos_verify_virtualizationmanager compos_verify_virtmgr_crosvm composd composd_virtualizationmanager composd_virtmgr_crosvm cppreopts crosvm_vu_fs crosvm_vu_snd derive_classpath derive_sdk device_as_webcam dex2oat dexopt_chroot_setup dmesgd fuseblkd fuseblkd_untrusted fwk_bufferhub gki_apex_prepostinstall gsid hal_allocator_default hal_keymint_system hal_widevine_system hidl_lazy_test_server hidservice iw kcmdlinectrl kcmdlinemodprobe linkerconfig linux_vm_setup lpdumpd mediacodeclist_generator mediaprovider_app mediatuner memcgv2_activation_depth migrate_legacy_obb_data misctrl mm_events mmd mtectrl native_app_zygote odrefresh odsign ot_ctl ot_daemon overlay_remounter pcc_component permissioncontroller_app platform_app_all_virtualizationmanager platform_app_all_virtmgr_crosvm pmgd preloads_copy preopt2cachename priv_app_all_virtualizationmanager priv_app_all_virtmgr_crosvm profcollectd remount rkp_cert_processor rkpd sdk_sandbox_34 sdk_sandbox_audit sdk_sandbox_next shell_virtualizationmanager shell_virtmgr_crosvm simpleperf_boot snapshotctl snapuserd stats storaged system_server_startup system_suspend trace_redactor tradeinmode untrusted_app_all_virtualizationmanager untrusted_app_all_virtmgr_crosvm uprobestats usbauthservice userdata_alias_remove vehicle_binding_util vfio_handler virtual_face virtual_fingerprint virtualizationservice virtualizationservice_virtualizationmanager virtualizationservice_virtmgr_crosvm vmlauncher_app vmnic vzwomatrigger_app wait_for_keymaster wifi_mainline_supplicant zygote_next edgetpu_app_server euiccpixel_app factory_ota_app ssr_detector_app sconed brownout_detection_app rilextensionservice_app mosey_app cccdktimesync_app turbo_adapter pixelsystemservice_app dcservice_app bluetooth_gci camera_propsetter_app con_monitor_app grilservice_app oemrilservice_app pixel_modem_app pixeldisplayservice_app pixelntnservice_app systemui_app vendor_ims_app vendor_rcs_app vendor_satellite_service gs_watchdogd backup_ota_log hal_audio_parameter_parser mosey_server flipendo flag_flipper_app repair_mode_app connectivity_thermal_power_manager scone_system_internals vendor_ims_remote_app vendor_qualifiednetworks_app vendor_rcs_service_app vendor_pbcs_app vendor_pcs_app google_recorder_app better_bug_app pixelsupport_app touchinsights_app debug_camera_app google_camera_app ))
+(typeattributeset protected_service (hal_npu_scheduling_service hal_audio_service hal_authgraph_service hal_authsecret_service hal_bluetooth_service hal_bluetooth_lpp_service hal_bootctl_service hal_broadcastradio_service hal_camera_service hal_can_controller_service hal_confirmationui_service hal_contexthub_service hal_dumpstate_service hal_evs_service hal_face_service hal_fastboot_service hal_frp_service hal_fingerprint_service hal_gnss_service hal_graphics_composer_service hal_health_service hal_health_storage_service hal_hwcrypto_service hal_identity_service hal_input_processor_service hal_ir_service hal_ivn_service hal_keymint_service hal_light_service hal_macsec_service hal_mediaquality_service hal_memtrack_service hal_motioncontext_service hal_nfc_service hal_oemlock_service hal_power_service hal_power_stats_service hal_radio_service hal_rebootescrow_service hal_remoteaccess_service hal_remotelyprovisionedcomponent_avf_service hal_remotelyprovisionedcomponent_service hal_sensors_service hal_secretkeeper_service hal_secureclock_service hal_secure_element_service hal_sharedsecret_service hal_system_suspend_service hal_tetheroffload_service hal_thermal_service hal_timestamp_service hal_tv_hdmi_cec_service hal_tv_hdmi_connection_service hal_tv_hdmi_earc_service hal_tv_input_service hal_threadnetwork_service hal_tv_tuner_service hal_usb_service hal_usb_gadget_service hal_uwb_service hal_vehicle_service hal_vibrator_service hal_weaver_service hal_nlinterceptor_service hal_wifi_service hal_wifi_hostapd_service hal_wifi_supplicant_service hal_gatekeeper_service hal_vm_capabilities_service hal_face_ext_service camera_binder_service camera_cameraidremapper_service camera_lyricconfigprovider_service ))
+(typeattributeset service_manager_type (aidl_lazy_test_service anomaly_detector_service hal_npu_scheduling_service apc_service apex_service artd_service artd_pre_reboot_service audioserver_service authorization_service batteryproperties_service bluetooth_service cameraserver_service fwk_camera_service default_android_service device_config_updatable_service dexopt_chroot_setup_service dnsresolver_service drmserver_service dumpstate_service evsmanagerd_service fingerprintd_service fwk_automotive_display_service fwk_vold_service gatekeeper_service gpu_service idmap_service incident_service installd_service credstore_service keystore_compat_hal_service keystore_maintenance_service keystore_metrics_service keystore_service legacykeystore_service lpdump_service mdns_service mediaserver_service mediametrics_service mediaextractor_service mediadrmserver_service mediatranscoding_service native_serial_service netd_service nfc_service npu_service ondevicepersonalization_system_service ot_daemon_service profiling_service radio_service secure_element_service service_manager_service storaged_service surfaceflinger_service system_app_service system_net_netd_service system_suspend_control_internal_service system_suspend_control_service update_engine_service update_engine_stable_service virtualization_service virtual_camera_service virtual_touchpad_service vold_service vr_hwc_service vrflinger_vsync_service accessibility_service account_service activity_service activity_task_service adb_service adservices_manager_service alarm_service app_binding_service app_function_service app_hibernation_service app_integrity_service app_prediction_service app_search_service appops_service appwidget_service archive_service assetatlas_service attestation_verification_service audio_service auth_service autofill_service backup_service batterystats_service battery_service binder_calls_stats_service blob_store_service bluetooth_manager_service broadcastradio_service cacheinfo_service cameraproxy_service clipboard_service cloudsearch_service contexthub_service contextual_search_service crossprofileapps_service IProxyService_service companion_device_service connectivity_native_service connectivity_service connmetrics_service consumer_ir_service content_capture_service content_suggestions_service content_service country_detector_service coverage_service cpuinfo_service cpu_monitor_service credential_service dataloader_manager_service dbinfo_service device_config_service device_policy_service device_state_service deviceidle_service device_identifiers_service devicestoragemonitor_service diskstats_service display_service domain_verification_service color_display_service ecm_enhanced_confirmation_service external_vibrator_service file_integrity_service font_service netd_listener_service network_watchlist_service devicelock_service DockObserver_service dreams_service dropbox_service ethernet_service biometric_service bugreport_service platform_compat_service face_service fingerprint_service fwk_altitude_service fwk_stats_service fwk_sensor_service fwk_vibrator_control_service game_service gfxinfo_service gnss_time_update_service grammatical_inflection_service graphicsstats_service hardware_service hardware_properties_service hdmi_control_service healthconnect_service hint_service imms_service incremental_service input_method_service input_service intrusion_detection_service ipsec_service iris_service jobscheduler_service launcherapps_service legacy_permission_service light_service locale_service location_service location_time_zone_manager_service lock_settings_service looper_stats_service media_communication_service media_metrics_service media_projection_service media_quality_service media_router_service media_session_service meminfo_service memtrackproxy_service midi_service mount_service music_recognition_service nearby_service netpolicy_service netstats_service network_management_service network_score_service network_stack_service network_time_update_service notification_service oem_lock_service overlay_service pac_proxy_service package_service package_native_service people_service permission_service permissionmgr_service permission_checker_service persistent_data_block_service pinner_service powerstats_service power_service print_service processinfo_service procstats_service reboot_readiness_service recovery_service registry_service remote_auth_service remote_provisioning_service resources_manager_service restrictions_service role_service rollback_service runtime_service rttmanager_service samplingprofiler_service scheduling_policy_service search_service search_ui_service sec_key_att_app_id_provider_service security_state_service selection_toolbar_service sensitive_content_protection_service sensorservice_service sensor_privacy_service serial_service servicediscovery_service settings_service shortcut_service slice_service smartspace_service statusbar_service storagestats_service sdk_sandbox_service system_config_service system_server_dumper_service system_update_service soundtrigger_middleware_service speech_recognition_service tare_service task_service testharness_service textclassification_service textservices_service texttospeech_service telecom_service thermal_service threadnetwork_service timedetector_service timezonedetector_service translation_service trust_service tv_ad_service tv_iapp_service tv_input_service tv_tuner_resource_mgr_service uimode_service updatelock_service uri_grants_service usagestats_service usb_service user_service uwb_service vcn_management_service vibrator_service vibrator_manager_service virtual_device_service virtual_device_native_service voiceinteraction_service vpn_management_service vr_manager_service wallpaper_service wallpaper_effects_generation_service webviewupdate_service wifip2p_service wifiscanner_service wifi_service wifinl80211_service wifiaware_service wifi_usd_service window_service inputflinger_service tethering_service emergency_affordance_service hal_audio_service hal_audiocontrol_service hal_authgraph_service hal_authsecret_service hal_bluetooth_service hal_bluetooth_lpp_service hal_bootctl_service hal_broadcastradio_service hal_camera_service hal_can_controller_service hal_cas_service hal_codec2_service hal_confirmationui_service hal_contexthub_service hal_drm_service hal_dumpstate_service hal_evs_service hal_face_service hal_fastboot_service hal_frp_service hal_fingerprint_service hal_gnss_service hal_graphics_allocator_service hal_graphics_composer_service hal_graphics_mapper_service hal_health_service hal_health_storage_service hal_hwcrypto_service hal_identity_service hal_input_processor_service hal_ir_service hal_ivn_service hal_keymint_service hal_light_service hal_macsec_service hal_mediaquality_service hal_memtrack_service hal_motioncontext_service hal_neuralnetworks_service hal_nfc_service hal_oemlock_service hal_power_service hal_power_stats_service hal_radio_service hal_rebootescrow_service hal_remoteaccess_service hal_remotelyprovisionedcomponent_avf_service hal_remotelyprovisionedcomponent_service hal_sensors_service hal_secretkeeper_service hal_secureclock_service hal_secure_element_service hal_sharedsecret_service hal_system_suspend_service hal_tetheroffload_service hal_thermal_service hal_timestamp_service hal_tv_hdmi_cec_service hal_tv_hdmi_connection_service hal_tv_hdmi_earc_service hal_tv_input_service hal_threadnetwork_service hal_tv_tuner_service hal_usb_service hal_usb_gadget_service hal_uwb_service hal_vehicle_service hal_vibrator_service hal_weaver_service hal_nlinterceptor_service hal_wifi_service hal_wifi_hostapd_service hal_wifi_supplicant_service hal_gatekeeper_service hal_vm_capabilities_service activity_structured_service allowlist_service ambient_context_service aoad_service authentication_policy_service casefolding_remover_service contextual_mode_service attention_service bg_install_control_service binder_stats_consumer_service compos_service communal_service content_restriction_service d2d_connectivity_service dynamic_system_service feature_flags_service file_service fwk_devicestate_service gsi_service incidentcompanion_service logcat_service logd_service mediacodeclist_generator_service mediatuner_service mmd_service on_device_intelligence_service content_safety_service pcc_sandbox_native_service pcc_sandbox_service personal_context_service profcollectd_service protolog_configuration_service resolver_service rkpd_registrar_service rkpd_refresh_service rkp_cert_processor_service safety_center_service stats_service statsbootstrap_service statscompanion_service statsmanager_service supervision_service task_continuity_service tracingproxy_service tradeinmode_service transparency_service trust_token_service accessor_trusty_keymint_comm_service trusty_keymint_comm_service accessor_trusty_gatekeeper_service accessor_trusty_hwcrypto_sharedsecret_service accessor_trusty_widevine_comm_service trusty_widevine_comm_service accessor_trusty_keymint_provisioning_service accessor_trusty_keymint_provisioning_thal_service trusty_keymint_provisioning_thal_service accessor_trusty_keymint_remotelyprovisionedcomponent_service accessor_trusty_keymint_secureclock_service vfio_handler_service virtualization_maintenance_service vm_tethering_service vmnic_service uce_service ui_latency_stats_service wearable_sensing_service wifi_mainline_supplicant_service dynamic_instrumentation_service uprobestats_service uprobestats_bridge_service advanced_protection_service multisensory_manager_service ranging_service aiseal_host_service aiseal_internal_service theme_service usb_auth_service hid_service edgetpu_nnapi_service edgetpu_app_service scone_aidl_service hal_face_ext_service hal_audio_parameter_parser_service mosey_server mosey_service camera_binder_service camera_cameraidremapper_service camera_lyricconfigprovider_service hal_ambience_hub_service ))
+(typeattributeset hal_service_type (hal_npu_scheduling_service hal_audio_service hal_audiocontrol_service hal_authgraph_service hal_authsecret_service hal_bluetooth_service hal_bluetooth_lpp_service hal_bootctl_service hal_broadcastradio_service hal_camera_service hal_can_controller_service hal_cas_service hal_codec2_service hal_confirmationui_service hal_contexthub_service hal_drm_service hal_dumpstate_service hal_evs_service hal_face_service hal_fastboot_service hal_frp_service hal_fingerprint_service hal_gnss_service hal_graphics_allocator_service hal_graphics_composer_service hal_graphics_mapper_service hal_health_service hal_health_storage_service hal_hwcrypto_service hal_identity_service hal_input_processor_service hal_ir_service hal_ivn_service hal_keymint_service hal_light_service hal_macsec_service hal_mediaquality_service hal_memtrack_service hal_motioncontext_service hal_neuralnetworks_service hal_nfc_service hal_oemlock_service hal_power_service hal_power_stats_service hal_radio_service hal_rebootescrow_service hal_remoteaccess_service hal_remotelyprovisionedcomponent_avf_service hal_remotelyprovisionedcomponent_service hal_sensors_service hal_secretkeeper_service hal_secureclock_service hal_secure_element_service hal_sharedsecret_service hal_system_suspend_service hal_tetheroffload_service hal_thermal_service hal_timestamp_service hal_tv_hdmi_cec_service hal_tv_hdmi_connection_service hal_tv_hdmi_earc_service hal_tv_input_service hal_threadnetwork_service hal_tv_tuner_service hal_usb_service hal_usb_gadget_service hal_uwb_service hal_vehicle_service hal_vibrator_service hal_weaver_service hal_nlinterceptor_service hal_wifi_service hal_wifi_hostapd_service hal_wifi_supplicant_service hal_gatekeeper_service hal_vm_capabilities_service hal_face_ext_service mosey_service camera_binder_service camera_cameraidremapper_service camera_lyricconfigprovider_service hal_ambience_hub_service ))
+(typeattributeset appdomain (bluetooth ephemeral_app gmscore_app isolated_app isolated_compute_app mediaprovider network_stack nfc platform_app platform_app_36 priv_app priv_app_36 radio rkpdapp runas_app secure_element shared_relro shell simpleperf system_app traceur_app untrusted_app untrusted_app_34 untrusted_app_32 untrusted_app_30 untrusted_app_29 untrusted_app_27 untrusted_app_25 adservices device_as_webcam mediaprovider_app pcc_component permissioncontroller_app sdk_sandbox_34 sdk_sandbox_audit sdk_sandbox_next vmlauncher_app vzwomatrigger_app euiccpixel_app factory_ota_app ssr_detector_app rilextensionservice_app mosey_app cccdktimesync_app turbo_adapter pixelsystemservice_app dcservice_app con_monitor_app grilservice_app oemrilservice_app pixel_modem_app pixeldisplayservice_app pixelntnservice_app systemui_app vendor_ims_app vendor_rcs_app vendor_satellite_service flipendo flag_flipper_app repair_mode_app connectivity_thermal_power_manager scone_system_internals vendor_ims_remote_app vendor_qualifiednetworks_app vendor_rcs_service_app vendor_pbcs_app vendor_pcs_app google_recorder_app better_bug_app pixelsupport_app google_camera_app ))
+(typeattributeset netdomain (adbd bluetooth dhcp dnsmasq drmserver dumpstate ephemeral_app gmscore_app mdnsd mediadrmserver mediaprovider mediaserver netd network_stack nfc platform_app platform_app_36 priv_app priv_app_36 radio rkpdapp runas_app shell system_app system_server untrusted_app untrusted_app_34 untrusted_app_32 untrusted_app_30 untrusted_app_29 untrusted_app_27 untrusted_app_25 update_engine adbd_tradeinmode adservices clatd ot_daemon pcc_component rkp_cert_processor sdk_sandbox_34 sdk_sandbox_audit sdk_sandbox_next vmlauncher_app factory_ota_app mosey_app dcservice_app vendor_ims_app vendor_rcs_app vendor_pcs_app google_recorder_app better_bug_app pixelsupport_app google_camera_app ))
+(typeattributeset bluetoothdomain (platform_app platform_app_36 priv_app priv_app_36 radio runas_app system_server untrusted_app untrusted_app_34 untrusted_app_32 untrusted_app_30 untrusted_app_29 untrusted_app_27 untrusted_app_25 vendor_pcs_app pixelsupport_app ))
+(typeattributeset coredomain (adbd apexd app_zygote artd atrace audioserver blkid blkid_untrusted bluetooth bootanim bootstat bpfloader bufferhubd cameraserver charger crash_dump credstore crosvm_vendor dhcp dnsmasq drmserver dumpstate e2fs early_virtmgr_vendor ephemeral_app evsmanagerd extra_free_kbytes fastbootd fingerprintd flags_health_check fsck fsck_untrusted gatekeeperd gmscore_app gpuservice healthd heapprofd hwservicemanager idmap incident incident_helper incidentd init inputflinger installd isolated_app isolated_compute_app kernel keystore llkd lmkd logd logpersist mdnsd mediadrmserver mediaextractor mediametrics mediaprovider mediaserver mediaswcodec mediatranscoding mmd_setup modprobe netd netutils_wrapper network_stack nfc omapi perfetto performanced platform_app platform_app_36 postinstall prefetch priv_app priv_app_36 prng_seeder profman radio recovery recovery_persist recovery_refresh rkpdapp rs rss_hwm_reset runas runas_app sdcardd secure_element serialservice servicemanager sgdisk shared_relro shell simpleperf simpleperf_app_runner slideshow statsd surfaceflinger system_app system_server tombstoned toolbox traced traced_perf traced_probes traceur_app ueventd uncrypt untrusted_app untrusted_app_34 untrusted_app_32 untrusted_app_30 untrusted_app_29 untrusted_app_27 untrusted_app_25 update_engine update_verifier usbd vdc virtual_camera virtual_touchpad virtualizationmanager_vendor vold vold_prepare_subdirs watchdogd webview_zygote wificond zygote aconfigd aconfigd_mainline adbd_tradeinmode adservices aflags aisealhostservice aisealhostservice_virtualizationmanager aisealhostservice_virtmgr_crosvm aoad apex_test_prepostinstall apexd_derive_classpath art_boot art_exec auditctl automotive_display_service bert_collector blank_screen boringssl_self_test canhalconfigurator casefolding_remover clatd compos_fd_server compos_verify compos_verify_virtualizationmanager compos_verify_virtmgr_crosvm composd composd_virtualizationmanager composd_virtmgr_crosvm cppreopts crosvm_vu_fs crosvm_vu_snd derive_classpath derive_sdk device_as_webcam dex2oat dexopt_chroot_setup dmesgd fuseblkd fuseblkd_untrusted fwk_bufferhub gki_apex_prepostinstall gsid hal_allocator_default hal_keymint_system hal_widevine_system hidservice iw kcmdlinectrl kcmdlinemodprobe linkerconfig linux_vm_setup lpdumpd mediacodeclist_generator mediaprovider_app mediatuner memcgv2_activation_depth migrate_legacy_obb_data misctrl mm_events mmd mtectrl native_app_zygote odrefresh odsign ot_ctl ot_daemon overlay_remounter pcc_component permissioncontroller_app platform_app_all_virtualizationmanager platform_app_all_virtmgr_crosvm pmgd preloads_copy preopt2cachename priv_app_all_virtualizationmanager priv_app_all_virtmgr_crosvm profcollectd remount rkp_cert_processor rkpd sdk_sandbox_34 sdk_sandbox_audit sdk_sandbox_next shell_virtualizationmanager shell_virtmgr_crosvm simpleperf_boot snapshotctl snapuserd stats storaged system_server_startup system_suspend trace_redactor tradeinmode untrusted_app_all_virtualizationmanager untrusted_app_all_virtmgr_crosvm uprobestats usbauthservice userdata_alias_remove vehicle_binding_util vfio_handler virtual_face virtual_fingerprint virtualizationservice virtualizationservice_virtualizationmanager virtualizationservice_virtmgr_crosvm vmlauncher_app vmnic wait_for_keymaster wifi_mainline_supplicant zygote_next edgetpu_app_server euiccpixel_app factory_ota_app ssr_detector_app sconed brownout_detection_app rilextensionservice_app mosey_app cccdktimesync_app turbo_adapter pixelsystemservice_app dcservice_app bluetooth_gci con_monitor_app grilservice_app oemrilservice_app pixel_modem_app pixeldisplayservice_app pixelntnservice_app systemui_app vendor_ims_app vendor_rcs_app vendor_satellite_service gs_watchdogd backup_ota_log hal_audio_parameter_parser mosey_server flipendo flag_flipper_app repair_mode_app connectivity_thermal_power_manager scone_system_internals vendor_ims_remote_app vendor_qualifiednetworks_app vendor_rcs_service_app vendor_pbcs_app vendor_pcs_app google_recorder_app better_bug_app pixelsupport_app touchinsights_app debug_camera_app google_camera_app ))
+(typeattributeset halclientdomain (adbd atrace audioserver bluetooth bootanim bufferhubd cameraserver charger credstore crosvm_vendor dumpstate evsmanagerd gatekeeperd isolated_compute_app keystore mediadrmserver mediaextractor mediaserver mediaswcodec mediatranscoding network_stack nfc omapi radio rkpdapp secure_element shell statsd surfaceflinger system_app system_server traced_probes traceur_app update_engine update_verifier usbd virtual_camera vold wificond aisealhostservice_virtualizationmanager aisealhostservice_virtmgr_crosvm automotive_display_service blank_screen canhalconfigurator compos_verify_virtualizationmanager compos_verify_virtmgr_crosvm composd_virtualizationmanager composd_virtmgr_crosvm fwk_bufferhub mediacodeclist_generator mediatuner odsign ot_daemon pcc_component platform_app_all_virtualizationmanager platform_app_all_virtmgr_crosvm priv_app_all_virtualizationmanager priv_app_all_virtmgr_crosvm shell_virtualizationmanager shell_virtmgr_crosvm snapshotctl storaged untrusted_app_all_virtualizationmanager untrusted_app_all_virtmgr_crosvm vehicle_binding_util virtualizationservice virtualizationservice_virtualizationmanager virtualizationservice_virtmgr_crosvm turbo_adapter systemui_app flipendo connectivity_thermal_power_manager scone_system_internals google_camera_app ))
+(typeattributeset hal_power_client (dumpstate statsd surfaceflinger system_server turbo_adapter flipendo google_camera_app ))
+(typeattribute hal_ambience_hub)
+(expandtypeattribute (hal_ambience_hub) true)
+(typeattribute hal_ambience_hub_client)
+(expandtypeattribute (hal_ambience_hub_client) true)
+(typeattributeset hal_ambience_hub_client (pcc_component ))
+(typeattribute hal_ambience_hub_server)
+(expandtypeattribute (hal_ambience_hub_server) false)
+(type camera_binder_service)
+(roletype object_r camera_binder_service)
+(type camera_cameraidremapper_service)
+(roletype object_r camera_cameraidremapper_service)
+(type camera_lyricconfigprovider_service)
+(roletype object_r camera_lyricconfigprovider_service)
+(type vendor_pbcs_app)
+(roletype object_r vendor_pbcs_app)
+(type vendor_pcs_app)
+(roletype object_r vendor_pcs_app)
+(type google_recorder_app)
+(roletype object_r google_recorder_app)
+(type better_bug_app)
+(roletype object_r better_bug_app)
+(type pixelsupport_app)
+(roletype object_r pixelsupport_app)
+(type touchinsights_app)
+(roletype object_r touchinsights_app)
+(type hal_ambience_hub_service)
+(roletype object_r hal_ambience_hub_service)
+(type debug_camera_app)
+(roletype object_r debug_camera_app)
+(type google_camera_app)
+(roletype object_r google_camera_app)
+(type vendor_pbcs_app_userfaultfd)
+(roletype object_r vendor_pbcs_app_userfaultfd)
+(type vendor_pbcs_app_block_io_uring)
+(roletype object_r vendor_pbcs_app_block_io_uring)
+(type vendor_pbcs_app_wrapfd)
+(roletype object_r vendor_pbcs_app_wrapfd)
+(type vendor_pcs_app_userfaultfd)
+(roletype object_r vendor_pcs_app_userfaultfd)
+(type vendor_pcs_app_block_io_uring)
+(roletype object_r vendor_pcs_app_block_io_uring)
+(type vendor_pcs_app_wrapfd)
+(roletype object_r vendor_pcs_app_wrapfd)
+(type google_recorder_app_userfaultfd)
+(roletype object_r google_recorder_app_userfaultfd)
+(type google_recorder_app_block_io_uring)
+(roletype object_r google_recorder_app_block_io_uring)
+(type google_recorder_app_wrapfd)
+(roletype object_r google_recorder_app_wrapfd)
+(type better_bug_app_userfaultfd)
+(roletype object_r better_bug_app_userfaultfd)
+(type better_bug_app_block_io_uring)
+(roletype object_r better_bug_app_block_io_uring)
+(type better_bug_app_wrapfd)
+(roletype object_r better_bug_app_wrapfd)
+(type pixelsupport_app_userfaultfd)
+(roletype object_r pixelsupport_app_userfaultfd)
+(type pixelsupport_app_block_io_uring)
+(roletype object_r pixelsupport_app_block_io_uring)
+(type pixelsupport_app_wrapfd)
+(roletype object_r pixelsupport_app_wrapfd)
+(type google_camera_app_userfaultfd)
+(roletype object_r google_camera_app_userfaultfd)
+(type google_camera_app_block_io_uring)
+(roletype object_r google_camera_app_block_io_uring)
+(type google_camera_app_wrapfd)
+(roletype object_r google_camera_app_wrapfd)
+;;* lmx 1 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/attributes
+(neverallow base_typeattr_1311 domain (process (fork)))
+;;* lme
+;;* lmx 1 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/attributes
+(neverallow base_typeattr_1312 domain (process (fork)))
+;;* lme
+;;* lmx 1 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/attributes
+(neverallow base_typeattr_1313 domain (process (fork)))
+;;* lme
+;;* lmx 2 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(allow hal_ambience_hub_client hal_ambience_hub_server (binder (call transfer)))
+;;* lme
+;;* lmx 2 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(allow hal_ambience_hub_server hal_ambience_hub_client (binder (transfer)))
+;;* lme
+;;* lmx 2 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(allow hal_ambience_hub_client hal_ambience_hub_server (fd (use)))
+;;* lme
+;;* lmx 3 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(allow hal_ambience_hub_server hal_ambience_hub_client (binder (call transfer)))
+;;* lme
+;;* lmx 3 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(allow hal_ambience_hub_client hal_ambience_hub_server (binder (transfer)))
+;;* lme
+;;* lmx 3 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(allow hal_ambience_hub_server hal_ambience_hub_client (fd (use)))
+;;* lme
+;;* lmx 6 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(allow hal_ambience_hub_client hal_ambience_hub_service (service_manager (find)))
+;;* lme
+;;* lmx 6 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(allow hal_ambience_hub_server hal_ambience_hub_service (service_manager (add find)))
+;;* lme
+;;* lmx 6 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(neverallow base_typeattr_1314 hal_ambience_hub_service (service_manager (add)))
+;;* lme
+;;* lmx 6 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(neverallow base_typeattr_1315 hal_ambience_hub_service (service_manager (find)))
+;;* lme
+;;* lmx 9 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(allow hal_ambience_hub_server servicemanager (binder (call transfer)))
+;;* lme
+;;* lmx 9 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/public/hal_ambience_hub.te
+(allow servicemanager hal_ambience_hub_server (binder (call transfer)))
+;;* lme
+(typetransition vendor_pbcs_app tmpfs file appdomain_tmpfs)
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(allow vendor_pbcs_app vendor_pbcs_app_userfaultfd (anon_inode (ioctl read create)))
+;;* lme
+(dontaudit su vendor_pbcs_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(neverallow base_typeattr_1316 vendor_pbcs_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(allow vendor_pbcs_app appdomain_tmpfs (file (read write getattr map execute)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(allow vendor_pbcs_app appdomain (memfd_file (read write getattr map execute)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(neverallow base_typeattr_1317 base_typeattr_1316 (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(neverallow base_typeattr_1318 vendor_pbcs_app (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(neverallow base_typeattr_1319 vendor_pbcs_app (process (ptrace)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(neverallow vendor_pbcs_app base_typeattr_1320 (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+(dontaudit vendor_pbcs_app system_app_data_file (dir (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads add_name remove_name reparent search rmdir)))
+;;* lmx 6 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(allow vendor_pbcs_app app_api_service (service_manager (find)))
+;;* lme
+;;* lmx 8 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(allow vendor_pbcs_app cameraserver_service (service_manager (find)))
+;;* lme
+;;* lmx 11 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(allow vendor_pbcs_app camera_binder_service (service_manager (add find)))
+;;* lme
+;;* lmx 11 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(neverallow base_typeattr_1316 camera_binder_service (service_manager (add)))
+;;* lme
+;;* lmx 14 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(allow vendor_pbcs_app camera_cameraidremapper_service (service_manager (add find)))
+;;* lme
+;;* lmx 14 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(neverallow base_typeattr_1316 camera_cameraidremapper_service (service_manager (add)))
+;;* lme
+;;* lmx 17 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(allow vendor_pbcs_app camera_lyricconfigprovider_service (service_manager (add find)))
+;;* lme
+;;* lmx 17 device/google/gs-common/camera/sepolicy/product/private/vendor_pbcs_app.te
+(neverallow base_typeattr_1316 camera_lyricconfigprovider_service (service_manager (add)))
+;;* lme
+(typetransition vendor_pcs_app tmpfs file appdomain_tmpfs)
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app vendor_pcs_app_userfaultfd (anon_inode (ioctl read create)))
+;;* lme
+(dontaudit su vendor_pcs_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(neverallow base_typeattr_1321 vendor_pcs_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app appdomain_tmpfs (file (read write getattr map execute)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app appdomain (memfd_file (read write getattr map execute)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(neverallow base_typeattr_1322 base_typeattr_1321 (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(neverallow base_typeattr_1323 vendor_pcs_app (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(neverallow base_typeattr_1324 vendor_pcs_app (process (ptrace)))
+;;* lme
+;;* lmx 2 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(neverallow vendor_pcs_app base_typeattr_1325 (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 17 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app app_api_service (service_manager (find)))
+(allow vendor_pcs_app audioserver_service (service_manager (find)))
+(allow vendor_pcs_app cameraserver_service (service_manager (find)))
+(allow vendor_pcs_app drmserver_service (service_manager (find)))
+(allow vendor_pcs_app mediaserver_service (service_manager (find)))
+(allow vendor_pcs_app mediametrics_service (service_manager (find)))
+(allow vendor_pcs_app nfc_service (service_manager (find)))
+(allow vendor_pcs_app radio_service (service_manager (find)))
+(allow vendor_pcs_app camera_cameraidremapper_service (service_manager (find)))
+(allow vendor_pcs_app camera_lyricconfigprovider_service (service_manager (find)))
+;;* lme
+;;* lmx 21 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app cache_file (dir (ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir)))
+(allow vendor_pcs_app cache_recovery_file (dir (ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir)))
+;;* lme
+;;* lmx 22 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app cache_file (file (ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads)))
+(allow vendor_pcs_app cache_recovery_file (file (ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads)))
+;;* lme
+;;* lmx 24 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app cache_file (lnk_file (ioctl read getattr lock map open watch watch_reads)))
+;;* lme
+;;* lmx 27 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app media_rw_data_file (dir (ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir)))
+;;* lme
+;;* lmx 28 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app media_rw_data_file (file (ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads)))
+;;* lme
+;;* lmx 31 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app preloads_data_file (dir (ioctl read getattr lock open watch watch_reads search)))
+;;* lme
+;;* lmx 31 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app preloads_data_file (file (ioctl read getattr lock map open watch watch_reads)))
+(allow vendor_pcs_app preloads_data_file (lnk_file (ioctl read getattr lock map open watch watch_reads)))
+;;* lme
+;;* lmx 32 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app preloads_media_file (dir (ioctl read getattr lock open watch watch_reads search)))
+;;* lme
+;;* lmx 32 device/google/gs-common/camera/sepolicy/product/private/vendor_pcs_app.te
+(allow vendor_pcs_app preloads_media_file (file (ioctl read getattr lock map open watch watch_reads)))
+(allow vendor_pcs_app preloads_media_file (lnk_file (ioctl read getattr lock map open watch watch_reads)))
+;;* lme
+(dontaudit vendor_pcs_app usb_device (dir (read open search)))
+(dontaudit vendor_pcs_app device (dir (read)))
+(typetransition google_recorder_app tmpfs file appdomain_tmpfs)
+;;* lmx 1 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(allow google_recorder_app google_recorder_app_userfaultfd (anon_inode (ioctl read create)))
+;;* lme
+(dontaudit su google_recorder_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lmx 1 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(neverallow base_typeattr_1326 google_recorder_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 1 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(allow google_recorder_app appdomain_tmpfs (file (read write getattr map execute)))
+;;* lme
+;;* lmx 1 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(allow google_recorder_app appdomain (memfd_file (read write getattr map execute)))
+;;* lme
+;;* lmx 1 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(neverallow base_typeattr_1327 base_typeattr_1326 (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 1 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(neverallow base_typeattr_1328 google_recorder_app (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 1 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(neverallow base_typeattr_1329 google_recorder_app (process (ptrace)))
+;;* lme
+;;* lmx 1 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(neverallow google_recorder_app base_typeattr_1330 (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 4 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(allow google_recorder_app graphics_config_writable_prop (file (read getattr map open)))
+;;* lme
+;;* lmx 6 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(allow google_recorder_app app_api_service (service_manager (find)))
+;;* lme
+;;* lmx 7 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(allow google_recorder_app audioserver_service (service_manager (find)))
+;;* lme
+;;* lmx 8 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(allow google_recorder_app mediaextractor_service (service_manager (find)))
+;;* lme
+;;* lmx 9 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(allow google_recorder_app mediametrics_service (service_manager (find)))
+;;* lme
+;;* lmx 10 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(allow google_recorder_app mediaserver_service (service_manager (find)))
+;;* lme
+;;* lmx 12 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(allow google_recorder_app privapp_data_file (lnk_file (ioctl read getattr lock map open watch watch_reads)))
+;;* lme
+;;* lmx 13 device/google/gs-common/recorder/sepolicy/product/private/google_recorder_app.te
+(allow google_recorder_app privapp_data_file (file (execute)))
+;;* lme
+(dontaudit google_recorder_app default_prop (file (read)))
+(typetransition better_bug_app tmpfs file appdomain_tmpfs)
+;;* lmx 2 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app better_bug_app_userfaultfd (anon_inode (ioctl read create)))
+;;* lme
+(dontaudit su better_bug_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lmx 2 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(neverallow base_typeattr_1331 better_bug_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 2 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app appdomain_tmpfs (file (read write getattr map execute)))
+;;* lme
+;;* lmx 2 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app appdomain (memfd_file (read write getattr map execute)))
+;;* lme
+;;* lmx 2 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(neverallow base_typeattr_1332 base_typeattr_1331 (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 2 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(neverallow base_typeattr_1333 better_bug_app (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 2 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(neverallow base_typeattr_1334 better_bug_app (process (ptrace)))
+;;* lme
+;;* lmx 2 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(neverallow better_bug_app base_typeattr_1335 (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 5 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app app_api_service (service_manager (find)))
+;;* lme
+;;* lmx 6 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app mediaserver_service (service_manager (find)))
+;;* lme
+;;* lmx 7 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app radio_service (service_manager (find)))
+;;* lme
+;;* lmx 8 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app system_api_service (service_manager (find)))
+;;* lme
+;;* lmx 10 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app privapp_data_file (file (execute)))
+;;* lme
+;;* lmx 11 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app privapp_data_file (lnk_file (ioctl read getattr lock map open watch watch_reads)))
+;;* lme
+;;* lmx 12 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app shell_data_file (file (ioctl read getattr lock map open watch watch_reads)))
+;;* lme
+;;* lmx 13 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app shell_data_file (dir (ioctl read getattr lock open watch watch_reads search)))
+;;* lme
+;;* lmx 16 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app trace_data_file (file (read getattr)))
+;;* lme
+;;* lmx 24 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app wm_trace_data_file (dir (ioctl read getattr lock open watch watch_reads search)))
+;;* lme
+;;* lmx 25 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app wm_trace_data_file (file (getattr)))
+;;* lme
+;;* lmx 32 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app perfetto_traces_bugreport_data_file (dir (ioctl read getattr lock open watch watch_reads search)))
+;;* lme
+;;* lmx 33 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app perfetto_traces_bugreport_data_file (file (getattr)))
+;;* lme
+;;* lmx 39 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app perfetto (fd (use)))
+;;* lme
+;;* lmx 40 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app perfetto_traces_data_file (file (read getattr)))
+;;* lme
+;;* lmx 43 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app property_socket (sock_file (write)))
+;;* lme
+;;* lmx 43 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app init (unix_stream_socket (connectto)))
+;;* lme
+;;* lmx 43 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app ctl_start_prop (property_service (set)))
+;;* lme
+;;* lmx 43 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app ctl_start_prop (file (read getattr map open)))
+;;* lme
+;;* lmx 46 device/google/gs-common/betterbug/sepolicy/product/private/better_bug_app.te
+(allow better_bug_app system_boot_reason_prop (file (read getattr map open)))
+;;* lme
+(typetransition pixelsupport_app tmpfs file appdomain_tmpfs)
+;;* lmx 3 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(allow pixelsupport_app pixelsupport_app_userfaultfd (anon_inode (ioctl read create)))
+;;* lme
+(dontaudit su pixelsupport_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lmx 3 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(neverallow base_typeattr_1336 pixelsupport_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 3 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(allow pixelsupport_app appdomain_tmpfs (file (read write getattr map execute)))
+;;* lme
+;;* lmx 3 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(allow pixelsupport_app appdomain (memfd_file (read write getattr map execute)))
+;;* lme
+;;* lmx 3 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(neverallow base_typeattr_1337 base_typeattr_1336 (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 3 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(neverallow base_typeattr_1338 pixelsupport_app (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 3 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(neverallow base_typeattr_1339 pixelsupport_app (process (ptrace)))
+;;* lme
+;;* lmx 3 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(neverallow pixelsupport_app base_typeattr_1340 (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 9 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(allow pixelsupport_app app_api_service (service_manager (find)))
+;;* lme
+;;* lmx 10 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(allow pixelsupport_app audioserver_service (service_manager (find)))
+;;* lme
+;;* lmx 11 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(allow pixelsupport_app mediaserver_service (service_manager (find)))
+;;* lme
+;;* lmx 12 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(allow pixelsupport_app radio_service (service_manager (find)))
+;;* lme
+;;* lmx 15 device/google/gs-common/pixelsupport/sepolicy/product/private/pixelsupport_app.te
+(allow pixelsupport_app bluetooth_lea_prop (file (read getattr map open)))
+;;* lme
+(typetransition google_camera_app tmpfs file appdomain_tmpfs)
+;;* lmx 3 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(allow google_camera_app google_camera_app_userfaultfd (anon_inode (ioctl read create)))
+;;* lme
+(dontaudit su google_camera_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lmx 3 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(neverallow base_typeattr_1341 google_camera_app_userfaultfd (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 3 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(allow google_camera_app appdomain_tmpfs (file (read write getattr map execute)))
+;;* lme
+;;* lmx 3 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(allow google_camera_app appdomain (memfd_file (read write getattr map execute)))
+;;* lme
+;;* lmx 3 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(neverallow base_typeattr_1342 base_typeattr_1341 (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 3 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(neverallow base_typeattr_1343 google_camera_app (file (ioctl read write create setattr lock relabelfrom append unlink link rename open watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 3 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(neverallow base_typeattr_1344 google_camera_app (process (ptrace)))
+;;* lme
+;;* lmx 3 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(neverallow google_camera_app base_typeattr_1345 (anon_inode (ioctl read write create getattr setattr lock relabelfrom relabelto append map unlink link rename execute quotaon mounton audit_access open execmod watch watch_mount watch_sb watch_with_perm watch_reads)))
+;;* lme
+;;* lmx 6 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(allow google_camera_app app_api_service (service_manager (find)))
+;;* lme
+;;* lmx 7 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(allow google_camera_app audioserver_service (service_manager (find)))
+;;* lme
+;;* lmx 8 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(allow google_camera_app cameraserver_service (service_manager (find)))
+;;* lme
+;;* lmx 9 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(allow google_camera_app mediaextractor_service (service_manager (find)))
+;;* lme
+;;* lmx 10 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(allow google_camera_app mediametrics_service (service_manager (find)))
+;;* lme
+;;* lmx 11 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(allow google_camera_app mediaserver_service (service_manager (find)))
+;;* lme
+;;* lmx 14 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(allow google_camera_app hal_power (memfd_file (read write getattr map)))
+;;* lme
+;;* lmx 14 device/google/gs-common/gcam_app/sepolicy/product/private/google_camera_app.te
+(allow hal_power google_camera_app (memfd_file (read write getattr map)))
+;;* lme
+(dontaudit google_camera_app vendor_default_prop (file (getattr map open)))
+;;* lmx 2 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/private/hal_pcc_component.te
+(allow pcc_component hal_ambience_hub (memfd_file (read write getattr map)))
+;;* lme
+;;* lmx 2 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/private/hal_pcc_component.te
+(allow hal_ambience_hub pcc_component (memfd_file (read write getattr map)))
+;;* lme
+;;* lmx 3 vendor/google_devices/gs-common/proprietary/ambience_hub/sepolicy/private/hal_pcc_component.te
+(allow pcc_component hal_ambience_hub_service (service_manager (find)))
+;;* lme
+(typetransition google_camera_app google_camera_app anon_inode "[wrapfd]" google_camera_app_wrapfd)
+(typetransition google_camera_app google_camera_app anon_inode "[io_uring]" google_camera_app_block_io_uring)
+(typetransition google_camera_app google_camera_app anon_inode "[userfaultfd]" google_camera_app_userfaultfd)
+(typetransition pixelsupport_app pixelsupport_app anon_inode "[wrapfd]" pixelsupport_app_wrapfd)
+(typetransition pixelsupport_app pixelsupport_app anon_inode "[io_uring]" pixelsupport_app_block_io_uring)
+(typetransition pixelsupport_app pixelsupport_app anon_inode "[userfaultfd]" pixelsupport_app_userfaultfd)
+(typetransition better_bug_app better_bug_app anon_inode "[wrapfd]" better_bug_app_wrapfd)
+(typetransition better_bug_app better_bug_app anon_inode "[io_uring]" better_bug_app_block_io_uring)
+(typetransition better_bug_app better_bug_app anon_inode "[userfaultfd]" better_bug_app_userfaultfd)
+(typetransition google_recorder_app google_recorder_app anon_inode "[wrapfd]" google_recorder_app_wrapfd)
+(typetransition google_recorder_app google_recorder_app anon_inode "[io_uring]" google_recorder_app_block_io_uring)
+(typetransition google_recorder_app google_recorder_app anon_inode "[userfaultfd]" google_recorder_app_userfaultfd)
+(typetransition vendor_pcs_app vendor_pcs_app anon_inode "[wrapfd]" vendor_pcs_app_wrapfd)
+(typetransition vendor_pcs_app vendor_pcs_app anon_inode "[io_uring]" vendor_pcs_app_block_io_uring)
+(typetransition vendor_pcs_app vendor_pcs_app anon_inode "[userfaultfd]" vendor_pcs_app_userfaultfd)
+(typetransition vendor_pbcs_app vendor_pbcs_app anon_inode "[wrapfd]" vendor_pbcs_app_wrapfd)
+(typetransition vendor_pbcs_app vendor_pbcs_app anon_inode "[io_uring]" vendor_pbcs_app_block_io_uring)
+(typetransition vendor_pbcs_app vendor_pbcs_app anon_inode "[userfaultfd]" vendor_pbcs_app_userfaultfd)
+(typeattribute base_typeattr_1345)
+(typeattributeset base_typeattr_1345 (not (system_server_wrapfd google_camera_app_userfaultfd ) ))
+(typeattribute base_typeattr_1344)
+(typeattributeset base_typeattr_1344 (and (domain ) (not (crash_dump runas_app simpleperf google_camera_app ))))
+(typeattribute base_typeattr_1343)
+(typeattributeset base_typeattr_1343 (and (appdomain ) (not (runas_app shell simpleperf google_camera_app ))))
+(typeattribute base_typeattr_1342)
+(typeattributeset base_typeattr_1342 (and (google_camera_app ) (not (runas_app shell simpleperf ))))
+(typeattribute base_typeattr_1341)
+(typeattributeset base_typeattr_1341 (and (domain ) (not (google_camera_app ))))
+(typeattribute base_typeattr_1340)
+(typeattributeset base_typeattr_1340 (not (system_server_wrapfd pixelsupport_app_userfaultfd ) ))
+(typeattribute base_typeattr_1339)
+(typeattributeset base_typeattr_1339 (and (domain ) (not (crash_dump runas_app simpleperf pixelsupport_app ))))
+(typeattribute base_typeattr_1338)
+(typeattributeset base_typeattr_1338 (and (appdomain ) (not (runas_app shell simpleperf pixelsupport_app ))))
+(typeattribute base_typeattr_1337)
+(typeattributeset base_typeattr_1337 (and (pixelsupport_app ) (not (runas_app shell simpleperf ))))
+(typeattribute base_typeattr_1336)
+(typeattributeset base_typeattr_1336 (and (domain ) (not (pixelsupport_app ))))
+(typeattribute base_typeattr_1335)
+(typeattributeset base_typeattr_1335 (not (system_server_wrapfd better_bug_app_userfaultfd ) ))
+(typeattribute base_typeattr_1334)
+(typeattributeset base_typeattr_1334 (and (domain ) (not (crash_dump runas_app simpleperf better_bug_app ))))
+(typeattribute base_typeattr_1333)
+(typeattributeset base_typeattr_1333 (and (appdomain ) (not (runas_app shell simpleperf better_bug_app ))))
+(typeattribute base_typeattr_1332)
+(typeattributeset base_typeattr_1332 (and (better_bug_app ) (not (runas_app shell simpleperf ))))
+(typeattribute base_typeattr_1331)
+(typeattributeset base_typeattr_1331 (and (domain ) (not (better_bug_app ))))
+(typeattribute base_typeattr_1330)
+(typeattributeset base_typeattr_1330 (not (system_server_wrapfd google_recorder_app_userfaultfd ) ))
+(typeattribute base_typeattr_1329)
+(typeattributeset base_typeattr_1329 (and (domain ) (not (crash_dump runas_app simpleperf google_recorder_app ))))
+(typeattribute base_typeattr_1328)
+(typeattributeset base_typeattr_1328 (and (appdomain ) (not (runas_app shell simpleperf google_recorder_app ))))
+(typeattribute base_typeattr_1327)
+(typeattributeset base_typeattr_1327 (and (google_recorder_app ) (not (runas_app shell simpleperf ))))
+(typeattribute base_typeattr_1326)
+(typeattributeset base_typeattr_1326 (and (domain ) (not (google_recorder_app ))))
+(typeattribute base_typeattr_1325)
+(typeattributeset base_typeattr_1325 (not (system_server_wrapfd vendor_pcs_app_userfaultfd ) ))
+(typeattribute base_typeattr_1324)
+(typeattributeset base_typeattr_1324 (and (domain ) (not (crash_dump runas_app simpleperf vendor_pcs_app ))))
+(typeattribute base_typeattr_1323)
+(typeattributeset base_typeattr_1323 (and (appdomain ) (not (runas_app shell simpleperf vendor_pcs_app ))))
+(typeattribute base_typeattr_1322)
+(typeattributeset base_typeattr_1322 (and (vendor_pcs_app ) (not (runas_app shell simpleperf ))))
+(typeattribute base_typeattr_1321)
+(typeattributeset base_typeattr_1321 (and (domain ) (not (vendor_pcs_app ))))
+(typeattribute base_typeattr_1320)
+(typeattributeset base_typeattr_1320 (not (system_server_wrapfd vendor_pbcs_app_userfaultfd ) ))
+(typeattribute base_typeattr_1319)
+(typeattributeset base_typeattr_1319 (and (domain ) (not (crash_dump runas_app simpleperf vendor_pbcs_app ))))
+(typeattribute base_typeattr_1318)
+(typeattributeset base_typeattr_1318 (and (appdomain ) (not (runas_app shell simpleperf vendor_pbcs_app ))))
+(typeattribute base_typeattr_1317)
+(typeattributeset base_typeattr_1317 (and (vendor_pbcs_app ) (not (runas_app shell simpleperf ))))
+(typeattribute base_typeattr_1316)
+(typeattributeset base_typeattr_1316 (and (domain ) (not (vendor_pbcs_app ))))
+(typeattribute base_typeattr_1315)
+(typeattributeset base_typeattr_1315 (and (domain ) (not (atrace shell system_app traceur_app hal_ambience_hub_client hal_ambience_hub_server ))))
+(typeattribute base_typeattr_1314)
+(typeattributeset base_typeattr_1314 (and (domain ) (not (hal_ambience_hub_server ))))
+(typeattribute base_typeattr_1313)
+(typeattributeset base_typeattr_1313 (and (hal_ambience_hub_client ) (not (halclientdomain ))))
+(typeattribute base_typeattr_1312)
+(typeattributeset base_typeattr_1312 (and (hal_ambience_hub_server ) (not (hal_ambience_hub ))))
+(typeattribute base_typeattr_1311)
+(typeattributeset base_typeattr_1311 (and (hal_ambience_hub_server ) (not (halserverdomain ))))
+
