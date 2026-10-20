@@ -1,0 +1,11 @@
+dtb: dtb/
+ramdisk: ramdisk/
+header version: 4
+pagesize: 2048
+base: 0x10000000
+kernel_offset: 0x00008000
+ramdisk_offset: 0x01000000
+tags_offset: 0x00000100
+dtb_offset: 0x01f00000
+vendor_cmdline: 'fips140.load_sequential=1 vh_sched.load_sequential=1 spmi_smartdv.load_sequential=1 regmap-goog-spmi.load_sequential=1 max77779_pmic.load_sequential=1 max77779_pmic_spmi.load_sequential=1 max77779_pmic_pinctrl.load_sequential=1 dyndbg="func alloc_contig_dump_pages +p" cma_sysfs.experimental=Y cgroup.memory=nokmem init_on_alloc=0 init_on_free=1 rcupdate.rcu_expedited=1 rcu_nocbs=all rcutree.enable_rcu_lazy swiotlb=noforce disable_dma32=on sysctl.kernel.sched_pelt_multiplier=4 aoc_core.aoc_enable_gsa_boot=1 rodata=on arm_smmu_v3_kvm.smc_s2=true kasan=off at24.write_timeout=100 log_buf_len=1024K android_arch_task_struct_size=512 bootconfig'
+board: ''

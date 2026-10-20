@@ -1,0 +1,2 @@
+androidboot.load_modules_parallel=true
+androidboot.boot_devices=3c400000.ufs
